@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Fancy To-Do List</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Fancy To-Do List</h1>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Welcome to Fancy To-Do List</h1>
+            <p>Organize your tasks and stay productive with our simple yet effective to-do list app.</p>
+            <button class="cta-btn" onclick="document.getElementById('add-form').scrollIntoView({ behavior: 'smooth' });">Get Started</button>
+        </div>
+    </section>
+
+    <div class="container">
+        <form id="add-form" class="add-form">
+            <input type="text" name="task" placeholder="Enter a new task" required>
+            <input type="date" name="task_date" required>
+            <input type="time" name="task_time" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterTasks('all')">All</button>
+            <button class="filter-btn" onclick="filterTasks('active')">Active</button>
+            <button class="filter-btn" onclick="filterTasks('completed')">Completed</button>
+        </div>
+        <div id="task-container">
+            {% for task_date, tasks in tasks_by_date.items() %}
+                <h2>{{ task_date }}</h2>
+                <ul class="task-list">
+                    {% for task in tasks %}
+                        <li class="task {% if task.completed %}completed{% endif %}" data-id="{{ task.id }}">
+                            <input type="checkbox" {% if task.completed %}checked{% endif %} onclick="toggleTask({{ task.id }})">
+                            <span class="task-title">{{ task.title }}</span>
+                            <span class="task-time">{{ task.task_time.strftime('%H:%M') }}</span>
+                            <a href="javascript:void(0);" class="edit-btn" onclick="showEditForm({{ task.id }}, '{{ task.title }}')">✏️</a>
+                            <a href="javascript:void(0);" class="delete-btn" onclick="deleteTask({{ task.id }})">🗑️</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+        </div>
+    </div>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-item">
+            <h3>Easy Task Management</h3>
+            <p>Keep track of your tasks with ease and never miss a deadline.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Filter Tasks</h3>
+            <p>View your tasks by status: active, completed, or all tasks.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Organize by Date and Time</h3>
+            <p>Schedule tasks with specific dates and times to stay on top of your schedule.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Fancy To-Do List is dedicated to helping you stay organized and productive. Our app offers a user-friendly interface and essential features to manage your tasks effectively.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out to us at contact@fancytodolist.com.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Winnie Mbinya. All rights reserved.</p>
+    </footer>
+
+    <form id="edit-form" class="edit-form">
+        <input type="text" name="title" id="edit-title" required>
+        <button type="submit">Save</button>
+    </form>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
