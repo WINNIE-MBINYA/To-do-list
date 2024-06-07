@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <title>Fancy To-Do List</title>
+    <title>To-Do List</title>
 </head>
 <body>
     <header>
@@ -58,41 +58,71 @@
         </div>
     </div>
 
-    <section id="features" class="features">
+    <div id="edit-form" class="edit-form">
+        <h2>Edit Task</h2>
+        <input type="hidden" id="edit-task-id">
+        <input type="text" id="edit-task-title" placeholder="Enter a new task" required>
+        <button onclick="saveTask()">Save</button>
+        <button onclick="closeEditForm()">Cancel</button>
+    </div>
+
+    <section class="features" id="features">
         <h2>Features</h2>
         <div class="feature-item">
-            <h3>Easy Task Management</h3>
-            <p>Keep track of your tasks with ease and never miss a deadline.</p>
+            <h3>Organize Your Tasks</h3>
+            <p>Keep track of your to-dos with ease. Organize your tasks by date and time to ensure you never miss a deadline.</p>
         </div>
         <div class="feature-item">
-            <h3>Filter Tasks</h3>
-            <p>View your tasks by status: active, completed, or all tasks.</p>
+            <h3>Easy to Use</h3>
+            <p>Our user-friendly interface makes it easy for you to add, edit, and delete tasks as needed.</p>
         </div>
         <div class="feature-item">
-            <h3>Organize by Date and Time</h3>
-            <p>Schedule tasks with specific dates and times to stay on top of your schedule.</p>
+            <h3>Stay Productive</h3>
+            <p>With our simple and effective to-do list app, you can stay on top of your tasks and boost your productivity.</p>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <section class="about" id="about">
         <h2>About Us</h2>
-        <p>Fancy To-Do List is dedicated to helping you stay organized and productive. Our app offers a user-friendly interface and essential features to manage your tasks effectively.</p>
+        <p>We are dedicated to helping you stay organized and productive. Our to-do list app is designed to be simple and easy to use, so you can focus on what matters most.</p>
     </section>
 
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
         <h2>Contact Us</h2>
-        <p>If you have any questions or feedback, feel free to reach out to us at contact@fancytodolist.com.</p>
+        <p>Have questions or feedback? We'd love to hear from you! Contact us at info@todolist.com.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Winnie Mbinya. All rights reserved.</p>
+        <p>&copy; 2024 To-Do List. All rights reserved.</p>
     </footer>
 
-    <form id="edit-form" class="edit-form">
-        <input type="text" name="title" id="edit-title" required>
-        <button type="submit">Save</button>
-    </form>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        // Add your JavaScript functions here
+        function toggleTask(taskId) {
+            // Your code to toggle the task completion status
+        }
+
+        function deleteTask(taskId) {
+            // Your code to delete the task
+        }
+
+        function showEditForm(taskId, taskTitle) {
+            document.getElementById('edit-task-id').value = taskId;
+            document.getElementById('edit-task-title').value = taskTitle;
+            document.getElementById('edit-form').style.display = 'flex';
+        }
+
+        function closeEditForm() {
+            document.getElementById('edit-form').style.display = 'none';
+        }
+
+        function saveTask() {
+            // Your code to save the edited task
+        }
+
+        function filterTasks(filter) {
+            // Your code to filter tasks
+        }
+    </script>
 </body>
 </html>
-

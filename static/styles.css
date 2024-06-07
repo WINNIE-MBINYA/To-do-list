@@ -212,7 +212,7 @@ h1 {
 
 .features h2 {
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increased margin for better separation */
 }
 
 .feature-item {
@@ -221,7 +221,7 @@ h1 {
 
 .feature-item h3 {
     font-size: 1.5em;
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Increased margin for better separation */
 }
 
 .feature-item p {
@@ -238,13 +238,13 @@ h1 {
 
 .about h2 {
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increased margin for better separation */
 }
 
 .about p {
     font-size: 1em;
     color: #666;
-    max-width: 600px;
+    max-width: 800px; /* Increased max-width for better text layout */
     margin: 0 auto;
 }
 
@@ -257,13 +257,13 @@ h1 {
 
 .contact h2 {
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increased margin for better separation */
 }
 
 .contact p {
     font-size: 1em;
     color: #666;
-    max-width: 600px;
+    max-width: 800px; /* Increased max-width for better text layout */
     margin: 0 auto;
 }
 
