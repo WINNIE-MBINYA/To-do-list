@@ -41,10 +41,10 @@ nav ul li a {
 }
 
 .hero {
-    background: url('path/to/your/hero-image.jpg') no-repeat center center/cover;
+    background-color: #007bff; /* Changed to a solid color for better text visibility */
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px; /* Reduced padding to avoid excessive whitespace */
 }
 
 .hero-container {
@@ -53,13 +53,13 @@ nav ul li a {
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 2.5em; /* Adjusted font size for better balance */
     margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 1.2em;
-    margin-bottom: 40px;
+    margin-bottom: 30px; /* Reduced margin for better spacing */
 }
 
 .cta-btn {
@@ -82,7 +82,7 @@ nav ul li a {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-    margin: 50px auto;
+    margin: 20px auto;
 }
 
 h1 {
@@ -278,4 +278,3 @@ footer {
 footer p {
     margin: 0;
 }
-
