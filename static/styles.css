@@ -1,12 +1,12 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #F3E8EB;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: #007bff;
+    background: #433E49;
     color: white;
     padding: 20px 0;
 }
@@ -41,10 +41,10 @@ nav ul li a {
 }
 
 .hero {
-    background-color: #007bff; /* Changed to a solid color for better text visibility */
+    background-color: #928490;
     color: white;
     text-align: center;
-    padding: 50px 20px; /* Reduced padding to avoid excessive whitespace */
+    padding: 50px 20px;
 }
 
 .hero-container {
@@ -53,27 +53,29 @@ nav ul li a {
 }
 
 .hero h1 {
-    font-size: 2.5em; /* Adjusted font size for better balance */
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 1.2em;
-    margin-bottom: 30px; /* Reduced margin for better spacing */
+    margin-bottom: 30px;
 }
 
 .cta-btn {
     padding: 15px 30px;
-    border: none;
+    border: 2px solid #433E49;
     background: #28a745;
     color: white;
     font-size: 1em;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
 }
 
 .cta-btn:hover {
     background: #218838;
+    border-color: #F3E8EB;
 }
 
 .container {
@@ -106,15 +108,17 @@ h1 {
 
 .add-form button, .edit-form button {
     padding: 10px;
-    border: none;
+    border: 2px solid #433E49;
     background: #28a745;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
 }
 
 .add-form button:hover, .edit-form button:hover {
     background: #218838;
+    border-color: #F3E8EB;
 }
 
 .task-list {
@@ -171,22 +175,25 @@ h1 {
 
 .filter-btn {
     padding: 10px;
-    border: none;
-    background: #007bff;
+    border: 2px solid #433E49;
+    background: #928490;
     color: white;
     border-radius: 5px;
     cursor: pointer;
     flex: 1;
     margin: 0 5px;
     text-align: center;
+    transition: background 0.3s, border-color 0.3s;
 }
 
 .filter-btn:hover {
-    background: #0056b3;
+    background: #705e69;
+    border-color: #F3E8EB;
 }
 
 .filter-btn.active {
-    background: #0056b3;
+    background: #705e69;
+    border-color: #F3E8EB;
 }
 
 .edit-form {
@@ -205,14 +212,14 @@ h1 {
 
 /* Features Section */
 .features {
-    background-color: #fff;
+    background-color: #DBC1AD;
     padding: 50px 20px;
     text-align: center;
 }
 
 .features h2 {
     font-size: 2em;
-    margin-bottom: 30px; /* Increased margin for better separation */
+    margin-bottom: 30px;
 }
 
 .feature-item {
@@ -221,7 +228,7 @@ h1 {
 
 .feature-item h3 {
     font-size: 1.5em;
-    margin-bottom: 15px; /* Increased margin for better separation */
+    margin-bottom: 15px;
 }
 
 .feature-item p {
@@ -231,45 +238,45 @@ h1 {
 
 /* About Section */
 .about {
-    background-color: #f9f9f9;
+    background-color: #F3E8EB;
     padding: 50px 20px;
     text-align: center;
 }
 
 .about h2 {
     font-size: 2em;
-    margin-bottom: 30px; /* Increased margin for better separation */
+    margin-bottom: 30px;
 }
 
 .about p {
     font-size: 1em;
     color: #666;
-    max-width: 800px; /* Increased max-width for better text layout */
+    max-width: 800px;
     margin: 0 auto;
 }
 
 /* Contact Section */
 .contact {
-    background-color: #fff;
+    background-color: #DBC1AD;
     padding: 50px 20px;
     text-align: center;
 }
 
 .contact h2 {
     font-size: 2em;
-    margin-bottom: 30px; /* Increased margin for better separation */
+    margin-bottom: 30px;
 }
 
 .contact p {
     font-size: 1em;
     color: #666;
-    max-width: 800px; /* Increased max-width for better text layout */
+    max-width: 800px;
     margin: 0 auto;
 }
 
 /* Footer */
 footer {
-    background: #007bff;
+    background: #433E49;
     color: white;
     text-align: center;
     padding: 20px 0;
