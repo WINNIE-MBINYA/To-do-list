@@ -1,0 +1,32 @@
+2024-06-10T20:26:22,172 Using pip 24.0 from /home/winnie/To-do-list/venv/lib/python3.10/site-packages/pip (python 3.10)
+2024-06-10T20:26:22,177 Non-user install because user site-packages disabled
+2024-06-10T20:26:22,467 Created temporary directory: /tmp/pip-build-tracker-am4zm9ph
+2024-06-10T20:26:22,468 Initialized build tracking at /tmp/pip-build-tracker-am4zm9ph
+2024-06-10T20:26:22,468 Created build tracker: /tmp/pip-build-tracker-am4zm9ph
+2024-06-10T20:26:22,468 Entered build tracker: /tmp/pip-build-tracker-am4zm9ph
+2024-06-10T20:26:22,469 Created temporary directory: /tmp/pip-install-k3xdrti8
+2024-06-10T20:26:22,470 Created temporary directory: /tmp/pip-ephem-wheel-cache-it4zl7hg
+2024-06-10T20:26:22,501 Requirement already satisfied: reportlab in ./venv/lib/python3.10/site-packages (4.2.0)
+2024-06-10T20:26:22,525 Requirement already satisfied: pillow>=9.0.0 in ./venv/lib/python3.10/site-packages (from reportlab) (10.3.0)
+2024-06-10T20:26:22,526 Requirement already satisfied: chardet in ./venv/lib/python3.10/site-packages (from reportlab) (5.2.0)
+2024-06-10T20:26:22,570 Created temporary directory: /tmp/pip-unpack-9qsht38w
+2024-06-10T20:26:22,648 Remote version of pip: 24.0
+2024-06-10T20:26:22,649 Local version of pip:  24.0
+2024-06-10T20:26:22,649 Was pip installed by pip? True
+2024-06-10T20:26:22,649 Removed build tracker: '/tmp/pip-build-tracker-am4zm9ph'
+2024-06-10T20:42:58,975 Using pip 24.0 from /home/winnie/To-do-list/venv/lib/python3.10/site-packages/pip (python 3.10)
+2024-06-10T20:42:58,980 Non-user install because user site-packages disabled
+2024-06-10T20:42:59,372 Created temporary directory: /tmp/pip-build-tracker-m536wall
+2024-06-10T20:42:59,372 Initialized build tracking at /tmp/pip-build-tracker-m536wall
+2024-06-10T20:42:59,372 Created build tracker: /tmp/pip-build-tracker-m536wall
+2024-06-10T20:42:59,372 Entered build tracker: /tmp/pip-build-tracker-m536wall
+2024-06-10T20:42:59,372 Created temporary directory: /tmp/pip-install-a4j7ib15
+2024-06-10T20:42:59,373 Created temporary directory: /tmp/pip-ephem-wheel-cache-07n82sfe
+2024-06-10T20:42:59,446 Requirement already satisfied: reportlab in ./venv/lib/python3.10/site-packages (4.2.0)
+2024-06-10T20:42:59,469 Requirement already satisfied: pillow>=9.0.0 in ./venv/lib/python3.10/site-packages (from reportlab) (10.3.0)
+2024-06-10T20:42:59,470 Requirement already satisfied: chardet in ./venv/lib/python3.10/site-packages (from reportlab) (5.2.0)
+2024-06-10T20:42:59,505 Created temporary directory: /tmp/pip-unpack-f5k62mop
+2024-06-10T20:42:59,567 Remote version of pip: 24.0
+2024-06-10T20:42:59,567 Local version of pip:  24.0
+2024-06-10T20:42:59,570 Was pip installed by pip? True
+2024-06-10T20:42:59,570 Removed build tracker: '/tmp/pip-build-tracker-m536wall'
