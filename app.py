@@ -41,6 +41,7 @@ def add_task():
         'task_date': task.task_date.strftime('%Y-%m-%d'), 'task_time': task.task_time.strftime('%H:%M')
     })
 
+
 @app.route('/delete/<int:task_id>', methods=['POST'])
 def delete_task(task_id):
     task = Task.query.get(task_id)
@@ -64,4 +65,4 @@ def edit_task(task_id):
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=False)
+    app.run(host='0.0.0.0', port=port, debug=True)

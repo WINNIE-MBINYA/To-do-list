@@ -99,4 +99,3 @@ To run this application locally, follow these steps:
 function filterTasks(filter) {
     // Logic to filter tasks based on their status (all, active, completed)
 }
-

@@ -83,7 +83,7 @@ function deleteTask(taskId) {
 
 function showEditForm(taskId, taskTitle) {
     const editForm = document.getElementById('edit-form');
-    const editTitle = document.getElementById('edit-title');
+    const editTitle = document.getElementById('edit-task-title');
     editTitle.value = taskTitle;
     editForm.dataset.taskId = taskId;
     editForm.style.display = 'block';
@@ -92,7 +92,7 @@ function showEditForm(taskId, taskTitle) {
 function saveTask() {
     const editForm = document.getElementById('edit-form');
     const taskId = editForm.dataset.taskId;
-    const taskTitle = document.getElementById('edit-title').value.trim();
+    const taskTitle = document.getElementById('edit-task-title').value.trim();
 
     fetch(`/edit/${taskId}`, {
         method: 'POST',

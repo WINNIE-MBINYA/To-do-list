@@ -23,6 +23,18 @@ header {
 
 .logo {
     margin: 0;
+    font-size: 1.8em;
+    color: #66FCF1;
+}
+
+.logo-img {
+    width: auto;
+    max-width: 40px; /* Maximum width */
+    height: auto;
+    max-height: 40px; /* Maximum height */
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 nav ul {
@@ -98,9 +110,16 @@ nav ul li a:hover {
     margin: 20px auto;
 }
 
-h1 {
+.todo-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
-    text-align: center;
+}
+
+.todo-header h1 {
+    font-size: 2em;
+    color: #66FCF1;
 }
 
 .add-form, .edit-form {
@@ -284,28 +303,28 @@ h1 {
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
-    }
-    
-    .contact h2 {
-        font-size: 2em;
-        margin-bottom: 30px;
-    }
-    
-    .contact p {
-        font-size: 1em;
-        color: #C5C6C7;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    
-    /* Footer */
-    footer {
-        background: #1F2833;
-        color: #C5C6C7;
-        text-align: center;
-        padding: 20px 0;
-    }
-    
-    footer p {
-        margin: 0;
-    }
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    font-size: 1em;
+    color: #C5C6C7;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background: #1F2833;
+    color: #C5C6C7;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}

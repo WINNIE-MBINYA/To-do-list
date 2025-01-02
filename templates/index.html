@@ -9,6 +9,7 @@
 <body>
     <header>
         <div class="header-container">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="To-Do List Logo" class="logo.png">
             <h1 class="logo">To-Do List</h1>
             <nav>
                 <ul>
@@ -29,6 +30,9 @@
     </section>
 
     <div class="container">
+        <div class="todo-header">
+            <h1>To-Do List</h1>
+        </div>
         <form id="add-form" class="add-form">
             <input type="text" name="task" placeholder="Enter a new task" required>
             <input type="date" name="task_date" required>
@@ -48,9 +52,9 @@
                         <li class="task {% if task.completed %}completed{% endif %}" data-id="{{ task.id }}">
                             <input type="checkbox" {% if task.completed %}checked{% endif %} onclick="toggleTask({{ task.id }})">
                             <span class="task-title">{{ task.title }}</span>
-                            <span class="task-time">{{ task.task_time.strftime('%H:%M') }}</span>
-                            <a href="javascript:void(0);" class="edit-btn" onclick="showEditForm({{ task.id }}, '{{ task.title }}')">✏️</a>
-                            <a href="javascript:void(0);" class="delete-btn" onclick="deleteTask({{ task.id }})">🗑️</a>
+                            <span class="task-time">{{ task.task_time }}</span>
+                            <a href="#" class="edit-btn" onclick="showEditForm({{ task.id }}, '{{ task.title }}')">✏️</a>
+                            <a href="#" class="delete-btn" onclick="deleteTask({{ task.id }})">🗑️</a>
                         </li>
                     {% endfor %}
                 </ul>
@@ -96,33 +100,6 @@
         <p>&copy; 2024 To-Do List. All rights reserved.</p>
     </footer>
 
-    <script>
-        // Add your JavaScript functions here
-        function toggleTask(taskId) {
-            // Your code to toggle the task completion status
-        }
-
-        function deleteTask(taskId) {
-            // Your code to delete the task
-        }
-
-        function showEditForm(taskId, taskTitle) {
-            document.getElementById('edit-task-id').value = taskId;
-            document.getElementById('edit-task-title').value = taskTitle;
-            document.getElementById('edit-form').style.display = 'flex';
-        }
-
-        function closeEditForm() {
-            document.getElementById('edit-form').style.display = 'none';
-        }
-
-        function saveTask() {
-            // Your code to save the edited task
-        }
-
-        function filterTasks(filter) {
-            // Your code to filter tasks
-        }
-    </script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
