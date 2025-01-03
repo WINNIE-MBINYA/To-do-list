@@ -97,5 +97,5 @@ To run this application locally, follow these steps:
 
 ```javascript
 function filterTasks(filter) {
-    // Logic to filter tasks based on their status (all, active, completed)
+    // Logic to filter tasks based on their statuses (all, active, completed)
 }
